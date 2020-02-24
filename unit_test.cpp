@@ -16,6 +16,8 @@
 #include "Ceil_test.hpp"
 #include "Floor_test.hpp"
 #include "Abs_test.hpp"
+#include "Paren_test.hpp"
+#include "Trunc_test.hpp"
 
 int main(int argc, char **argv) {
   ::testing::InitGoogleTest(&argc, argv);
