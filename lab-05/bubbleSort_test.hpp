@@ -5,11 +5,11 @@
 #include "container.hpp"
 #include "VectorContainer.hpp"
 #include "sort.hpp"
-#include "lab-04/op.hpp"
-#include "lab-04/mult.hpp"
-#include "lab-04/add.hpp"
-#include "lab-04/sub.hpp"
-#include "lab-04/base.hpp"
+#include "../lab-04/op.hpp"
+#include "../lab-04/mult.hpp"
+#include "../lab-04/add.hpp"
+#include "../lab-04/sub.hpp"
+#include "../lab-04/base.hpp"
 
 #include "gtest/gtest.h"
 
