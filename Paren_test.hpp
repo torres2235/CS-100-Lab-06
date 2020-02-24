@@ -21,4 +21,24 @@ TEST(ParenTest, StringifyElement) {
         EXPECT_EQ(tester->stringify(), "(1.5)");
 }
 
+TEST(ParenTest, StringifyTwoElement) {
+        Op* one = new Op(1.5);
+	Op* two = new Op(2);
+	Mult* three = new Mult(one,two);
+
+        Paren* tester = new Paren(three);
+        EXPECT_EQ(tester->stringify(), "(1.5*2)");
+}
+
+TEST(ParenTest, Equation) {
+        Op* one = new Op(1.5);
+        Op* two = new Op(2);
+        Op* ten = new Op(10);
+        Add* three = new Add(one,two);
+
+        Paren* paren = new Paren(three);
+        Mult* tester = new Mult (ten, paren);
+        EXPECT_EQ(tester->stringify(), "10*(1.5+2)");
+}
+
 #endif //__PAREN_TEST_HPP__

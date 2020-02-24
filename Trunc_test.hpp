@@ -24,5 +24,14 @@ TEST(TruncTest, StringifyElement) {
         Trunc* tester = new Trunc(three);
         EXPECT_EQ(tester->stringify(), "3.5");
 }
-
+TEST(TruncTest, Equation) {
+        Op* one = new Op(1.5);
+        Op* two = new Op(2);
+	Op* ten = new Op(10);
+        Add* three = new Add(one,two);
+	
+        Trunc* trunc = new Trunc(three);
+	Mult* tester = new Mult (ten, trunc);
+        EXPECT_EQ(tester->stringify(), "10*3.5");
+}
 #endif //__TRUNC_TEST_HPP__

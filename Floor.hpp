@@ -16,11 +16,11 @@ class Floor : public Decorator {
 		virtual double evaluate() {
 			return floor(temp->evaluate());
 		}
-
+/*
 		virtual std::string stringify() {
 			return "temp";
 		}
-
+*/
 };
 
 #endif //__FLOOR_HPP__

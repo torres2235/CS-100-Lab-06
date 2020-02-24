@@ -16,10 +16,11 @@ class Abs : public Decorator {
 		virtual double evaluate() {
 			return abs(temp->evaluate());
 		}
-
+/*
 		virtual std::string stringify() {
 			return "temp";
 		}
+*/
 };
 
 #endif //__ABS_HPP__

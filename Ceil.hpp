@@ -18,10 +18,12 @@ class Ceil : public Decorator {
 			return ceil(temp->evaluate());
 
 		}
-		
+/*		
 		virtual std::string stringify() {
 			return "temp";
 		}
+*/
+
 };
 
 #endif //__CEIL_HPP
