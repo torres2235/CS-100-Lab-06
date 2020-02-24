@@ -14,6 +14,8 @@
 //#include "lab-05/SelectionSort_test.hpp"
 
 #include "Ceil_test.hpp"
+#include "Floor_test.hpp"
+#include "Abs_test.hpp"
 
 int main(int argc, char **argv) {
   ::testing::InitGoogleTest(&argc, argv);
