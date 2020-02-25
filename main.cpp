@@ -29,7 +29,7 @@ int main() {
 	
         Mult* tester = new Mult(trunc, paren);
 
-	cout << tester->stringify();
+	cout << tester->stringify() << endl;
 
 return 0;
 }
