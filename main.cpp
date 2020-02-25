@@ -27,7 +27,7 @@ int main() {
         Paren* paren = new Paren(sum);
 	Trunc* trunc = new Trunc(product);
 	
-        Mult* tester = new Mult (trunc, paren);
+        Mult* tester = new Mult(trunc, paren);
 
 	cout << tester->stringify();
 

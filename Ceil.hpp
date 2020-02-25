@@ -3,11 +3,13 @@
 
 #include "Decorator.hpp"
 #include <math.h>
+#include <sstream>
 
 class Ceil : public Decorator { 
 	private:
 		Base* temp;
-		double t;
+		std::ostringstream str;
+		double num;
 	public:
 		Ceil(Base* tempBase) : Decorator() {
 			temp = tempBase;
@@ -18,11 +20,12 @@ class Ceil : public Decorator {
 			return ceil(temp->evaluate());
 
 		}
-/*		
+		
 		virtual std::string stringify() {
-			return "temp";
+			num = ceil(temp->evaluate());
+                        str << num;
+                        return str.str();
 		}
-*/
 
 };
 

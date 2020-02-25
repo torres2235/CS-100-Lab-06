@@ -3,11 +3,13 @@
 
 #include "Decorator.hpp"
 #include <math.h>
+#include <sstream>
 
 class Abs : public Decorator {
 	private:
 		Base* temp;
-
+		std::ostringstream str;
+		double num;
 	public:
 		Abs(Base* tempBase) : Decorator() {
 			temp = tempBase;
@@ -16,11 +18,12 @@ class Abs : public Decorator {
 		virtual double evaluate() {
 			return abs(temp->evaluate());
 		}
-/*
+
 		virtual std::string stringify() {
-			return "temp";
+			num = abs(temp->evaluate());
+                        str << num;
+                        return str.str();
 		}
-*/
 };
 
 #endif //__ABS_HPP__
